@@ -1,0 +1,7 @@
+## generic files to ignore
+PHPMailer
+citrusCoders
+font-awesome
+handler.php
+sassTalk
+images
