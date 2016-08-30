@@ -1,0 +1,101 @@
+.c-form
+	width: 100%
+	max-width: 61rem
+	.wrap
+		position: relative
+		margin-bottom: 1em
+		i
+			position: absolute
+			top: 50%
+			right: 0
+			transform: translate(150%,-50%)
+			font-size: 3rem
+			opacity: 0
+		.correct
+			color: $green
+		.wrong
+			color: $red
+	.wrap.no-error
+		input, textarea
+			border-color: $green
+		.correct
+			opacity: 1
+	.wrap.error
+		input, textarea
+			border-color: $red
+		.wrong
+			opacity: 1
+	.error-here
+		border-color: $red
+	input, textarea
+		width: 100%
+		appearance: none
+		background-color: transparent
+		border: 0.1rem solid $black
+		border-radius: 0.25rem
+		padding: 1.5rem 1.25rem
+		font-family: $baseType
+		font-size: 1.6rem
+		transition: all 0.35s ease-in-out
+		resize: none
+		&:focus
+			outline: 0
+			border-color: $blue
+
+			&::-webkit-input-placeholder
+				color: transparent
+			&:-moz-placeholder
+				color: transparent
+				opacity: 1
+			&::-moz-placeholder
+				color: transparent
+				opacity: 1
+			&:-ms-input-placeholder
+				color: transparent
+
+		&::-webkit-input-placeholder
+			color: $black
+		&:-moz-placeholder
+			color: $black
+			opacity: 1
+		&::-moz-placeholder
+			color: $black
+			opacity: 1
+		&:-ms-input-placeholder
+			color: $black
+
+	input[type='submit']
+		display: inline-block
+		width: auto
+		background-color: $black
+		color: $white
+		transition: all 0.35s ease-in-out
+		padding: 1.5rem 1.75rem
+		line-height: 0.8em
+		&:hover
+			outline: 0
+			background-color: $blue
+			border-color: $blue
+			color: $white
+		&:focus
+			outline: 0
+
+	.submit-wrap
+		position: relative
+		.loading-gif
+			position: absolute
+			left: 0
+			top: 0
+			opacity: 0
+		.loading-gif.active
+			opacity: 1
+
+
+.contact .c-form
+	margin-top: 4.375rem
+
+
+
+.thank-you
+	padding-top: 4.375rem
+	max-width: 61rem

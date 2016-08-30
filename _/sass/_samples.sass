@@ -1,0 +1,57 @@
+.samples
+
+	.sample
+		position relative
+		height: 75vh
+		max-height: 100rem
+		min-height: 50rem
+		background-color: black
+		overflow: hidden
+
+		&:hover
+			.content-wrap
+				opacity: 1
+				transform: none
+
+		a
+			display: inline-block
+			width: 100%
+			height: 100%
+			color: $white
+			&:hover, &focus
+				color: $white
+		p
+			margin-bottom: 0.5em
+
+		.image-bg
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			z-index: 200
+			transform: scale(1)
+			opacity: 1
+			transition: all 0.35s ease-in-out
+
+		.content-wrap
+			background-color: $blackO
+			position: absolute
+			left: 0
+			right: 0
+			padding: 3rem
+			z-index: 300
+			opacity: 0
+			top: 0
+			bottom: 0
+			transform: scale(0.8)
+			transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1)
+
+		.inner-wrap
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 0
+			right: 0
+			max-width: 50rem
+			margin: auto

@@ -1,0 +1,143 @@
+//
+//- Base Values -//
+//
+html
+	font-size: 62.5%
+
+body
+	background-color: $white
+	color: $black
+	font-family: $baseType
+	font-size: 1.8rem
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	position: relative
+
+body.lock, html.lock
+	overflow: hidden
+	position: relative
+
+.view-wrap
+	background-color: $white
+	padding-left: 15.5rem
+	min-height: 100vh
+
+p
+	margin-bottom: 1em
+	line-height: 1.25em
+	&:last-of-type
+		margin-bottom: 0
+a
+	color: $white
+	text-decoration: none
+	transition: all 0.35s ease-in-out
+
+a:hover
+	color: $blue
+	text-decoration: none
+a:focus
+	outline: 0
+	text-decoration: none
+
+.ce-wrap
+	a
+		color: $black
+		font-weight: 700
+		&:hover
+			color: $blue
+
+
+h1,h2,h3,h4
+	font-family: $headerType
+	font-weight: 700
+	margin-bottom: 0.5em
+
+h1
+	font-size: 5.6rem
+	font-weight: 700
+
+h2
+	color: $blue
+	font-size: 3.2rem
+	// font-weight: 300
+	font-style: italic
+	font-family: $baseType
+	font-weight: 400
+
+h3
+	text-transform: uppercase
+	font-family: $baseType
+	font-weight: 700
+
+h3.lg
+	font-size:  2.4rem
+h3.lc
+	text-transform: capitalize
+
+p.alt
+	font-size: 2.2rem
+
+.btn-txt
+	font-family: $headerType
+	transition: 0.35s ease-in-out
+	span
+		font-weight: 700
+	i
+		margin-left: 0.5rem
+	&:hover
+		color: $white
+
+.btn-txt.alt:hover
+	color: $black
+
+.sub-head
+	color: $blue
+	font-style: italic
+	font-size: 2.4rem
+
+
+
+.boxs
+	box-shadow: 0.5rem 0.5rem 0.9rem rgba(33,33,33,0.2)
+
+.image-bg
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
+
+.image-bg.top
+	background-position: center top
+
+.view-wrap
+	transition: all 0.5s ease-in-out
+	opacity: 1
+	transform: translateY(0)
+
+.ng-leave
+	transition: all 0.5s ease-in-out
+	opacity: 0
+	transform: translateY(2.5rem)
+	pointer-events: none
+
+.ng-enter
+	transition: all 0.5s ease-in-out
+	opacity: 1
+	transform: translateY(0)
+
+
+.loader-wrap
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 15.5rem
+	right: 0
+
+	svg.loading-svg
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		margin: auto
+		transform: translateY(-50%)
+		path, rect
+			fill: $blue

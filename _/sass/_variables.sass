@@ -1,0 +1,44 @@
+//
+// - Imports - //
+//
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700|Merriweather")
+
+
+//
+// - Type - //
+//
+$baseType: 'Alegreya Sans', sans-serif
+$headerType: 'Merriweather', serif
+
+
+//
+// - Colors - //
+//
+$black: rgba(33,33,33,1)
+$blackO: rgba(33,33,33,0.8)
+$green: rgba(19,220,90,1)
+$blue: rgba(90,164,237,1)
+$white: rgba(255,255,255,1)
+$red: red
+
+.txt-white
+	color: $white
+
+.txt-blue
+	color: $blue
+
+//
+// - Helpers - //
+//
+ 
+%clearfix // (to use, @extend %clearfix)
+	zoom: 1
+	&:before, &:after
+		content: ""
+		display: table 
+	&:after
+		clear: both
+
+
+.clearfix
+	@extend %clearfix

@@ -1,0 +1,51 @@
+.side-bar
+	background-color: $black
+	bottom: 0
+	left: 0
+	position: fixed
+	top: 0
+	width: 15.5rem
+	z-index: 900
+	transition: all 0.35s ease-in-out
+	overflow: hidden
+	&:hover
+		width: 20rem
+		nav a
+			transform: translateX(0)
+	.logo-wrap
+		padding-top: 2.5rem
+		max-width: 60%
+		margin: auto
+		svg
+			fill: $white
+			max-width: 100%
+			height: auto
+			.blue,.green
+				fill: $white
+				transition: all 0.35s ease-in-out
+
+			&:hover
+				.blue
+					fill: $blue
+				.green
+					fill: $green
+
+
+nav
+	padding: 2rem
+	a
+		font-family: $baseType
+		font-weight: 700
+		font-size: 2.4rem
+		display: block
+		margin-bottom: 2rem
+		transform: translateX(-200%)
+		transition: 0.35s ease-in-out
+		&:nth-of-type(2)
+			transition-delay: 0.1s
+		&:nth-of-type(3)
+			transition-delay: 0.2s
+		&:nth-of-type(4)
+			transition-delay: 0.3s
+		&:last-of-type
+			margin-bottom: 0
