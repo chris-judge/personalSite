@@ -11,7 +11,7 @@
 			<h3 class="lg" ng-if="snapshot.title">{{snapshot.title}}</h3>
 			<div class="img-wrap">
 				<a target="blank" href="{{snapshot.url}}">
-					<img class="boxs" src="{{snapshot.image.url}}" alt="{{post.title.rendered}} {{snapshot.title}} Snapshot">
+					<img class="boxs all-trans" src="{{snapshot.image.url}}" alt="{{post.title.rendered}} {{snapshot.title}} Snapshot">
 				</a>
 			</div>
 		</div>

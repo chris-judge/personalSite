@@ -96,6 +96,14 @@
 					<?php include('_/img/pro/logo.svg'); ?>
 				</a>
 			</div>
+			<div class="menu-icon">
+				<div class="nav-icon">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+			</div>
 			<nav class="tar">
 				<a href="<?php echo get_home_url(); ?>/work">Work</a>
 				<a href="<?php echo get_home_url(); ?>/contact">Contact</a>

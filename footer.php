@@ -1,5 +1,5 @@
 		<footer class="mini-footer">
-			<p>© 2016 Christopher Judge // Web Developer</p>
+			<p>© 2017 Christopher Judge // Web Developer</p>
 		</footer>
 		<?php wp_footer(); ?>
 

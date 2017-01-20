@@ -9,6 +9,8 @@
 				<div class="content-wrap">
 					<h3 class="lg lc" ng-if="about.headline">{{about.headline}}</h3>
 					<div class="ce-wrap" ng-bind-html="about.description"></div>
+					<h3 class="lg lc" ng-if="about.music_headline">{{about.music_headline}}</h3>
+					<div class="ce-wrap music-list" ng-bind-html="about.music_description"></div>
 				</div>
 			</div>
 		</section>	
@@ -20,7 +22,7 @@
 				<div class="image-bg top" style="background-image:url({{sample.image}});"></div>
 				<div class="content-wrap tac">
 					<div class="inner-wrap">
-						<h3>{{sample.headline}}</h3>
+						<h3 class="lg">{{sample.headline}}</h3>
 						<p class="alt">{{sample.description}}</p>
 						<p class="btn-txt txt-blue">View <span>Project</span> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></p>
 					</div>

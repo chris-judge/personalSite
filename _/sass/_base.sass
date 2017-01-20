@@ -30,7 +30,10 @@ p
 a
 	color: $white
 	text-decoration: none
-	transition: all 0.35s ease-in-out
+	transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1)
+
+.all-trans
+	transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1)
 
 a:hover
 	color: $blue
@@ -79,7 +82,8 @@ p.alt
 
 .btn-txt
 	font-family: $headerType
-	transition: 0.35s ease-in-out
+	transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1)
+	cursor: pointer
 	span
 		font-weight: 700
 	i
@@ -141,3 +145,59 @@ p.alt
 		transform: translateY(-50%)
 		path, rect
 			fill: $blue
+
+
+.ce-wrap
+	ol,ul
+		margin-top: 1em
+		margin-bottom: 1em
+
+	ol
+		list-style-type: decimal
+		list-style-position: outside
+		padding-left: 3rem
+	ul
+		list-style-type: disc
+		padding-left: 3rem
+
+	li
+		margin-bottom: 0.25em
+		&:last-of-type
+			margin-bottom: 0
+
+
+@media screen and (min-width: 1920px)
+	body
+		font-size: 2.4rem
+	h1
+		font-size: 6.2rem
+	h2
+		font-size: 4rem
+	h3.lg
+		font-size: 3.6rem
+
+@media screen and (min-width: 1600px)
+	body
+		font-size: 2rem
+	h1
+		font-size: 5.8rem
+	h2
+		font-size: 3.6rem
+	h3.lg
+		font-size: 2.8rem
+
+@media screen and (max-width: 1100px)
+	.view-wrap
+		padding-left: 0
+		padding-top: 7.5rem
+	.loader-wrap
+		left: 0
+
+@media screen and (max-width: 450px)
+	.ce-wrap
+		ol,ul
+			padding-left: 2rem
+
+@media screen and (max-width: 375px)
+	h1
+		font-size: 4.8rem

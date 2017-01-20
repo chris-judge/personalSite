@@ -18,10 +18,14 @@
 			width: 100%
 			height: 100%
 			color: $white
+			cursor: pointer
 			&:hover, &focus
 				color: $white
 		p
 			margin-bottom: 0.5em
+
+		p.btn-txt
+			margin-bottom: 0
 
 		.image-bg
 			position: absolute
@@ -45,7 +49,7 @@
 			top: 0
 			bottom: 0
 			transform: scale(0.8)
-			transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1)
+			transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1)
 
 		.inner-wrap
 			position: absolute
@@ -55,3 +59,41 @@
 			right: 0
 			max-width: 50rem
 			margin: auto
+			padding: 2.5rem
+
+
+@media screen and (max-width: 1024px)
+	.samples .sample
+		.content-wrap
+			opacity: 1
+			transform: none
+			top: 10rem
+			left: 10rem
+			right: 10rem
+			bottom: 10rem
+
+@media screen and (max-width: 720px)
+	.samples .sample
+		.content-wrap
+			top: 5rem
+			left: 5rem
+			right: 5rem
+			bottom: 5rem
+
+@media screen and (max-width: 480px)
+	.samples .sample
+		height: 65vh
+		min-height: 42.5rem
+		.content-wrap
+			top: 3.5rem
+			left: 3.5rem
+			right: 3.5rem
+			bottom: 3.5rem
+
+@media screen and (max-width: 365px)
+	.samples .sample
+		.content-wrap
+			top: 2rem
+			left: 2rem
+			right: 2rem
+			bottom: 2rem
